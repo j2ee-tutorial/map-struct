@@ -1,8 +1,5 @@
 package com.javastudio.tutorial;
 
-import com.javastudio.tutorial.dto.CarDto;
-import com.javastudio.tutorial.mapper.CarMapper;
-import com.javastudio.tutorial.to.Car;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,12 +12,6 @@ public class SpringBootConsoleApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Car car = new Car();
-        car.setName("Benz");
-        CarDto carDto = CarMapper.MAPPER.fromCar(car);
-        /*
-        System.out.println(carDto.getName());
 
-         */
     }
 }
